@@ -1,0 +1,28 @@
+{
+  "name": "@ReactAdvancedEnterprise/core",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "ADRIAN HERNANDEZ",
+  "license": "MIT",
+  "devDependencies": {
+    "lerna": "^7.3.0"
+  },
+  "scripts": {
+    "build": "yarn lerna run build",
+    "dev": "yarn lerna run dev",
+    "test": "yarn lerna run test",
+    "publish": "yarn test && yarn build && yarn lerna publish",
+    "commit": "yarn git-cz",
+    "test:chromatic": "yarn lerna run test:chromatic",
+    "build:storybook": "yarn build && yarn lerna run build-storybook"
+  },
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/normalize-scss"
+    ]
+  }
+}
