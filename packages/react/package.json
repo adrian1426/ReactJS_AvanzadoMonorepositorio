@@ -1,7 +1,7 @@
 {
   "name": "@ahh/react",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "lib/index.js",
   "author": "ADRIAN HERNANDEZ",
   "license": "MIT",
   "devDependencies": {
@@ -13,6 +13,7 @@
   },
   "type": "module",
   "scripts": {
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "dev": "yarn build --watch"
   }
 }
